@@ -1,18 +1,25 @@
+// App.js
 import { useState } from 'react';
+import TopPanel from './components/TopPanel';
+import BottomPanel from './components/BottomPanel';
+import { NumContext } from './context/NumContext';
 
 function App() {
-	const [count, setCount] = useState(0);
+	const [first, setFirst] = useState(0);
+	const [second, setSecond] = useState(0);
+
+	const initialValue = {
+		first,
+		second,
+		setFirst,
+		setSecond,
+	};
 
 	return (
-		<Parent1 count={count}>
-			<Parent2 count={count}>
-				<Parent3 count={count}>
-					<Parent4 count={count}>
-						<Child count={count} />
-					</Parent4>
-				</Parent3>
-			</Parent2>
-		</Parent1>
+		<NumContext.Provider value={initialValue}>
+			<TopPanel />
+			<BottomPanel />
+		</NumContext.Provider>
 	);
 }
 

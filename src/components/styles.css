@@ -1,0 +1,17 @@
+.top-panel {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	height: 80px;
+	padding-left: 20px;
+	border: blue solid 1px;
+}
+
+.bottom-panel {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	height: 80px;
+	padding-left: 20px;
+	border: red solid 1px;
+}
