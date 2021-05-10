@@ -1,15 +1,16 @@
 .panel {
 	display: flex;
-	align-items: center;
 	width: 50%;
-	height: 80px;
+	min-height: 80px;
 	padding-left: 20px;
 }
 
 .top-panel {
+	align-items: center;
 	border: blue solid 1px;
 }
 
 .bottom-panel {
+	flex-direction: column;
 	border: red solid 1px;
 }

@@ -1,11 +1,11 @@
 // ./components/TopPanel.js
-import Sum from './Sum';
+import Button from './Button';
 import './styles.css';
 
 export default function TopPanel() {
 	return (
 		<div className="panel top-panel">
-			<Sum />
+			<Button />
 		</div>
 	);
 }
