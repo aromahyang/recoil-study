@@ -1,0 +1,15 @@
+.panel {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	height: 80px;
+	padding-left: 20px;
+}
+
+.top-panel {
+	border: blue solid 1px;
+}
+
+.bottom-panel {
+	border: red solid 1px;
+}
