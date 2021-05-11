@@ -1,14 +1,14 @@
 // App.js
 import TopPanel from './components/TopPanel';
 import BottomPanel from './components/BottomPanel';
-import { CatProvider } from './context/CatContext';
+import { NumProvider } from './context/NumContext';
 
 function App() {
 	return (
-		<CatProvider>
+		<NumProvider>
 			<TopPanel />
 			<BottomPanel />
-		</CatProvider>
+		</NumProvider>
 	);
 }
 
