@@ -1,7 +1,17 @@
 // ./context/CatContext.js
-import { createContext } from 'react';
+import { createContext, useState } from 'react';
 
-export const CatContext = createContext({
+const CatContext = createContext({
 	url: '',
 	setUrl: () => {},
 });
+
+function CatProvider({ children }) {
+	const [url, setUrl] = useState('');
+
+	const initialValue = { url, setUrl };
+
+	return <CatContext.Provider value={initialValue}>{children}</CatContext.Provider>
+}
+
+export { CatContext, CatProvider };
