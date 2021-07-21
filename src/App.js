@@ -1,10 +1,12 @@
 import { RecoilRoot } from 'recoil';
-import Count from './components/Count';
+import TopPanel from './components/TopPanel';
+import BottomPanel from './components/BottomPanel';
 
 function App() {
 	return (
 		<RecoilRoot>
-			<Count />
+			<TopPanel />
+			<BottomPanel />
 		</RecoilRoot>
 	);
 }
