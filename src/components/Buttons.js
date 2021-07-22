@@ -1,6 +1,6 @@
 // 예제 3 - 영화 목록 보여주기
 import { useRecoilState } from 'recoil';
-import { typeState } from '../recoil/movieStatus';
+import { typeState } from '../recoil/movieState';
 import './styles.css';
 
 export default function Buttons() {
