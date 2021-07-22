@@ -1,4 +1,4 @@
-// 예제 3
+// 예제 3 - 영화 목록 보여주기
 import { useRecoilState } from 'recoil';
 import { typeStatus } from '../recoil/movieStatus';
 import './styles.css';

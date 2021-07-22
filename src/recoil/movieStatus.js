@@ -18,4 +18,4 @@ export const movieStatus = selector({
 		const result = await response.json();
 		return result.results;
 	},
-})
+});

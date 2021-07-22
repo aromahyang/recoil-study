@@ -1,3 +1,4 @@
+// 예제 2 - 고양이 사진 보여주기
 import { useRecoilValue } from 'recoil';
 import { catStatus } from '../recoil/catStatus';
 

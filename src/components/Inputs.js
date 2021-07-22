@@ -1,3 +1,4 @@
+// 예제 1 - 두 숫자의 합 구하기
 import { useSetRecoilState } from 'recoil';
 import { numberState } from '../recoil/numberState'
 
