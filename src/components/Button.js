@@ -1,9 +1,9 @@
 // 예제 2 - 고양이 사진 보여주기
 import { useSetRecoilState } from 'recoil';
-import { catStatus } from '../recoil/catStatus';
+import { catState } from '../recoil/catState';
 
 export default function Button() {
-	const setUrl = useSetRecoilState(catStatus);
+	const setUrl = useSetRecoilState(catState);
 
 	const handleClick = async () => {
 		const res = await fetch('https://api.thecatapi.com/v1/images/search', { method: 'GET' });
