@@ -12,7 +12,7 @@
 
 // 고양이 사진 보여주기 예제
 import CatImage from './CatImage';
-import './Panel.css';
+import './styles.css';
 
 export default function BottomPanel() {
 	return (

@@ -1,0 +1,35 @@
+.panel {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	min-height: 80px;
+	padding-left: 20px;
+}
+
+.top-panel {
+	border: blue solid 1px;
+}
+
+.bottom-panel {
+	border: red solid 1px;
+}
+
+.type-button {
+	margin: 16px;
+}
+
+.type-button.active {
+	background: yellow;
+}
+
+h2 {
+	margin: 0 16px;
+}
+
+.movie-card {
+	display: inline-block;
+	width: 200px;
+	height: 400px;
+	padding: 16px;
+	overflow: hidden;
+}

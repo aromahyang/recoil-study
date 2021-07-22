@@ -1,12 +1,15 @@
+import { Suspense } from 'react';
 import { RecoilRoot } from 'recoil';
-import TopPanel from './components/TopPanel';
-import BottomPanel from './components/BottomPanel';
+import Buttons from './components/Buttons';
+import Movies from './components/Movies';
 
 function App() {
 	return (
 		<RecoilRoot>
-			<TopPanel />
-			<BottomPanel />
+			<Buttons />
+			<Suspense fallback={<div />}>
+				<Movies />
+			</Suspense>
 		</RecoilRoot>
 	);
 }
