@@ -1,11 +1,11 @@
 // 예제 3 - 영화 목록 보여주기
 import { useRecoilValue } from 'recoil';
-import { typeStatus, movieStatus } from '../recoil/movieStatus';
+import { typeState, movieState } from '../recoil/movieState';
 import './styles.css';
 
 export default function Movies() {
-	const type = useRecoilValue(typeStatus);
-	const movies = useRecoilValue(movieStatus);
+	const type = useRecoilValue(typeState);
+	const movies = useRecoilValue(movieState);
 
 	const getImageUrl = (val) => {
 		return `https://image.tmdb.org/t/p/w500/${val}`;
