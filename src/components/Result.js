@@ -1,4 +1,4 @@
-// 예제 2 - 고양이 사진 보여주기
+// 예제 1 - 두 숫자의 합 구하기
 import { useRecoilValue } from 'recoil';
 import { numberState } from '../recoil/numberState';
 
@@ -7,7 +7,7 @@ export default function Result() {
 
 	return (
 		<div>
-			Result: {first + second }
+			Result: {first + second}
 		</div>
 	);
 }
